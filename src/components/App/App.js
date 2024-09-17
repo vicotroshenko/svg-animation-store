@@ -21,6 +21,8 @@ import Svg27 from "../Svg27/Svg27";
 import Svg28 from "../Svg28/Svg28";
 import Svg29 from "../Svg29/Svg29";
 import Svg3 from "../Svg3/Svg3";
+import Svg30 from "../Svg30/Svg30";
+import Svg31 from "../Svg31/Svg31";
 import Svg4 from "../Svg4/Svg4";
 import Svg5 from "../Svg5/Svg5";
 import Svg6 from "../Svg6/Svg6";
@@ -61,6 +63,8 @@ function App() {
       <Svg27 />
       <Svg28 />
       <Svg29 />
+      <Svg30 />
+      <Svg31 />
     </div>
   );
 }
