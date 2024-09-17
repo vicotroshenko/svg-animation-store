@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: #042331;
+}
+
+.wrapper > svg {
+  width: 100px;
+  height: 100px;
+}
+
+.wrapper rect {
+  width: 100px;
+  height: 100px;
+  fill: none;
+  stroke-width: 100px;
+  stroke: #00adff;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 50%;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  to {
+    stroke-dashoffset: 250%;
+  }
+}

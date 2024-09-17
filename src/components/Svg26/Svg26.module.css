@@ -1,0 +1,139 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  background-color: #111;
+}
+
+.elastic {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.elastic::after,
+.elastic::before {
+  content: "";
+  position: absolute;
+  bottom: 63px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 10;
+}
+.elastic::before {
+  left: 5px;
+}
+
+.elastic::after {
+  right: 5px;
+}
+
+.elastic::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: 63px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.elastic svg {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  fill: none;
+}
+
+.elastic svg:nth-child(2) {
+  filter: blur(25px);
+}
+
+.elastic path {
+  width: 100%;
+  stroke: #ff0093;
+  stroke-width: 10;
+  stroke-linecap: round;
+  d: path("M 10 80 Q 190 80 290 80");
+  animation: animate 2.5s linear infinite, animateColor 2.5s linear infinite;
+}
+
+.ball {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: inset 0 -15px 20px rgba(0, 0, 0, 0.5);
+  animation: animateBall 2.5s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    d: path("M 10 80 Q 145 80 290 80");
+  }
+
+  10% {
+    d: path("M 10 80 Q 145 160 290 80");
+  }
+  20% {
+    d: path("M 10 80 Q 145 20 290 80");
+  }
+  30% {
+    d: path("M 10 80 Q 145 128 290 80");
+  }
+  35% {
+    d: path("M 10 80 Q 145 100 290 80");
+  }
+  40% {
+    d: path("M 10 80 Q 145 80 290 80");
+  }
+  50% {
+    d: path("M 10 80 Q 145 100 290 80");
+  }
+  55% {
+    d: path("M 10 80 Q 145 90 290 80");
+  }
+  60% {
+    d: path("M 10 80 Q 145 80 290 80");
+  }
+}
+
+@keyframes animateColor {
+  0%,
+  100% {
+    stroke: #ff0092;
+  }
+  33.33% {
+    stroke: #0f0;
+  }
+  66.66% {
+    stroke: #ff0;
+  }
+}
+
+@keyframes animateBall {
+  0%,
+  100% {
+    transform: translateY(-68.5px);
+  }
+  10%,
+  11%,
+  5% {
+    transform: translateY(-52px);
+  }
+
+  50% {
+    transform: translateY(-240px);
+  }
+}

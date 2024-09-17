@@ -1,0 +1,19 @@
+.svg {
+ width: 100%;
+ height: 150px;
+}
+
+.svg text {
+	font-size: 100px;
+	fill: rgba(0, 0, 0, 0.5);
+	stroke-width: 2px;
+	stroke: #e5ff00;
+	stroke-dasharray: 80px;
+	stroke-linejoin: round;
+	animation: animate 3s linear infinite;
+}
+@keyframes animate {
+	100% {
+			stroke-dasharray: 160px;
+	}
+}

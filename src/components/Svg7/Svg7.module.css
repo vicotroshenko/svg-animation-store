@@ -1,0 +1,40 @@
+.button {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 24px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.button > svg,
+.button rect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  fill: transparent;
+}
+
+.button rect {
+  stroke: #077381;
+  stroke-width: 4px;
+  transition: 2s;
+  stroke-dasharray: 60 200;
+  stroke-dashoffset: 320;
+}
+
+.button:hover rect {
+  stroke: #03272c;
+  stroke-dasharray: 200 60;
+  stroke-dashoffset: 0;
+}
