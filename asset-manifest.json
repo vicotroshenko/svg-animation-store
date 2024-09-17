@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/svg-animation-store/static/css/main.7ec4ec2a.css",
+    "main.js": "/svg-animation-store/static/js/main.446e340b.js",
+    "static/js/453.e5402046.chunk.js": "/svg-animation-store/static/js/453.e5402046.chunk.js",
+    "static/media/17.jpg": "/svg-animation-store/static/media/17.46123f72e69d282c926a.jpg",
+    "static/media/imageCSS_3.png": "/svg-animation-store/static/media/imageCSS_3.81b422c8ca59a999d38d.png",
+    "static/media/imageHTML.png": "/svg-animation-store/static/media/imageHTML.00f418480ad76efae4ed.png",
+    "static/media/imageCSS_2.png": "/svg-animation-store/static/media/imageCSS_2.e971599f3ae19a212b55.png",
+    "static/media/imageCSS_4.png": "/svg-animation-store/static/media/imageCSS_4.0d89a44129ef184ca608.png",
+    "static/media/imageHTML_2.png": "/svg-animation-store/static/media/imageHTML_2.4f22ef36ab70e92c8c52.png",
+    "static/media/imageCSS_5.png": "/svg-animation-store/static/media/imageCSS_5.6bfc7e712fc8a0b6a524.png",
+    "static/media/imageCSS.png": "/svg-animation-store/static/media/imageCSS.bded6d288c5b436fc155.png",
+    "static/media/imageHTML_1.png": "/svg-animation-store/static/media/imageHTML_1.2e28b172a291e9053851.png",
+    "static/media/imageCSS_6.png": "/svg-animation-store/static/media/imageCSS_6.e5a3135a64d8591ab1d1.png",
+    "static/media/html.png": "/svg-animation-store/static/media/html.8c2fc076f9192283b191.png",
+    "static/media/css.png": "/svg-animation-store/static/media/css.2a3134c834d8eccdd32e.png",
+    "static/media/imageHTML_3.png": "/svg-animation-store/static/media/imageHTML_3.4af3ffa187fbd603a9a1.png",
+    "static/media/rocket.svg": "/svg-animation-store/static/media/rocket.40d793e74fc81e4f8d92.svg",
+    "static/media/plane.svg": "/svg-animation-store/static/media/plane.3b4ddfad98fc5a1e0e49.svg",
+    "static/media/jet.svg": "/svg-animation-store/static/media/jet.2b933224b588f5781440.svg",
+    "index.html": "/svg-animation-store/index.html",
+    "main.7ec4ec2a.css.map": "/svg-animation-store/static/css/main.7ec4ec2a.css.map",
+    "main.446e340b.js.map": "/svg-animation-store/static/js/main.446e340b.js.map",
+    "453.e5402046.chunk.js.map": "/svg-animation-store/static/js/453.e5402046.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ec4ec2a.css",
+    "static/js/main.446e340b.js"
+  ]
+}
