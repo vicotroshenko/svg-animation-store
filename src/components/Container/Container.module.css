@@ -23,6 +23,13 @@
   border-bottom: 25px solid transparent;
 }
 
+.title_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
 
 .images_container {
 	display: flex;

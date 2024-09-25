@@ -1,0 +1,82 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background: #ffee90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  display: block;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #111111;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+@media (hover: hover) {
+  .button:hover,
+  .button:focus {
+    box-shadow: 4px 4px 4px 2px #111111;
+  }
+}
+
+@media (hover: none) {
+  .button:active {
+    box-shadow: 4px 4px 4px 2px #111111;
+  }
+}
+.container > h1 {
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  min-height: 280px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 4px 2px #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.wrapper.active .container {
+  filter: blur(10px);
+}
+
+.wrapper.active #popup {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.wrapper.active .container {
+  pointer-events: none;
+	user-select: none;
+}

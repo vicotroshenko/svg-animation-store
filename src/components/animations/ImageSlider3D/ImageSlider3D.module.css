@@ -1,0 +1,114 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #d2d2d2;
+  background-image: repeating-linear-gradient(
+      to right,
+      transparent 0 100px,
+      #25283b22 100px 101px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0 100px,
+      #25283b22 100px 101px
+    );
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 18%;
+  left: calc(50% - 100px);
+  list-style: none;
+  transform-style: preserve-3d;
+  animation: autoRun 40s linear infinite;
+  z-index: 2;
+}
+
+.item {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(550px);
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes autoRun {
+  0% {
+    transform: perspective(5000px) rotateX(-5deg) rotateY(0);
+  }
+  100% {
+    transform: perspective(5000px) rotateX(-5deg) rotateY(360deg);
+  }
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(900px, 80vw);
+  height: max-content;
+  padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.content h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 8em;
+  line-height: 1em;
+  color: #25283b;
+  position: relative;
+}
+
+.content h1::after {
+  content: attr(data-content);
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: 2;
+  -webkit-text-stroke: 1px #d2d2d2;
+  color: transparent;
+}
+
+.author {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: right;
+  max-width: 200px;
+}
+
+.content h2 {
+  font-size: 1.5em;
+}
+
+.model {
+  background-image: url("../../../images/animations/6/model.png");
+  width: 100%;
+  height: 75vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  z-index: 0;
+}

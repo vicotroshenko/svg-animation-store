@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import styles from "./Container.module.css";
 
-const Container = ({ children, images = null, number }) => {
+const Container = ({ children, images = null, number, name = '' }) => {
   const [open, setOpen] = useState(false);
   return (
     <div className={styles.container} id={number}>
-      <h2>{number}</h2>
+      <div className={styles.title_container}>
+        <h2>{number}</h2>
+        <p>{name}</p>
+      </div>
       <div>{children}</div>
       <button
         type="button"

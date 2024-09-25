@@ -1,0 +1,71 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 300px;
+	background: #151515;
+}
+
+.wrapper nav {
+	position: relative;
+	display: flex;
+	gap: 20px;
+	background: #222327;
+	padding: 15px 60px;
+
+}
+
+.wrapper a {
+	position: relative;
+	color: #999;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: 500;
+	z-index: 2;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 20px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+#indicator {
+	position: absolute;
+	height: 75px;
+	width: 150px;
+	background: #29fd53;
+	z-index: 1;
+	display: none;
+	transition: 0.5s;
+}
+
+#indicator::before {
+	content: '';
+	position: absolute;
+	left: -30px;
+	width: 50px;
+	height: 15px;
+	background: #29fd53;
+	border-radius: 15px;
+	box-shadow: 15px 30px #29fd53, 5px 60px #29fd53, -15px 15px #222327, -10px 45px #222327;
+	transition: 0.2s;
+}
+#indicator::after {
+	content: '';
+	position: absolute;
+	right: -30px;
+	width: 50px;
+	height: 15px;
+	background: #29fd53;
+	border-radius: 15px;
+	box-shadow: 5px 30px #29fd53, -10px 60px #29fd53, 15px 15px #222327, 10px 45px #222327;
+	transition: 0.5s;
+}
+
+.wrapper a:active ~ #indicator::before {
+	left: -10px;
+	box-shadow: -15px 30px #29fd53, -5px 60px #29fd53, -10px 15px #222327, -20px 45px #222327;
+}
