@@ -5,6 +5,7 @@ import NavMenuIndicator2 from '../components/animations/NavMenuIndicator2/NavMen
 import Popup from '../components/animations/Popup/Popup'
 import Slider from '../components/animations/Slider/Slider'
 import ImageSlider3D from '../components/animations/ImageSlider3D/ImageSlider3D'
+import AnimatedForm from '../components/animations/AnimatedForm/AnimatedForm'
 
 const Animations1 = () => {
 	return (
@@ -15,6 +16,7 @@ const Animations1 = () => {
 			<Popup/>
 			<Slider />
 			<ImageSlider3D/>
+			<AnimatedForm/>
 		</div>
 	)
 }

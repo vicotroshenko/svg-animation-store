@@ -1,0 +1,198 @@
+.wrapper {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  color: #fff;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 460px;
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(
+    45deg,
+    #00dbde,
+    #ff0000,
+    #00dbde,
+    #ff0000,
+    #00dbde,
+    #ff0000,
+    #00dbde,
+    #ff0000
+  );
+  background-size: 400%;
+  animation: animate 30s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+}
+
+.form {
+  position: absolute;
+  background: #222;
+  inset: 4px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.form h2 {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #00dbde;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.input_box {
+  position: relative;
+  width: 100%;
+  height: 55px;
+  margin-top: 25px;
+}
+
+.input_box input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  padding: 0 40px 0 15px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.input_box::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.input_box:focus-within::before,
+.input_box:has(input:valid):before {
+  height: 100%;
+}
+
+.input_box span {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 18px;
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.input_box .input_icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #ddd;
+  pointer-events: none;
+  transition: 0.3s;
+  width: 15px;
+  height: 15px;
+}
+
+.input_box input:focus ~ .input_icon,
+.input_box input:valid ~ .input_icon {
+  color: #222;
+}
+
+.input_box input:focus ~ span,
+.input_box input:valid ~ span {
+  background: #00dbde;
+  color: #222;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 15px;
+  border-radius: 5px;
+  transform: translateY(-38px);
+}
+
+.links {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #ddd;
+}
+
+.links label {
+  cursor: pointer;
+}
+
+.form a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.btn {
+  margin-top: 25px;
+  height: 45px;
+  border: none;
+  outline: none;
+  background: #ddd;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+@media (hover: hover) {
+  .form a:hover,
+  .form a:focus {
+    text-decoration: underline;
+  }
+
+  .btn:hover,
+  .btn.focus {
+    background: #fff;
+  }
+}
+
+@media (hover: none) {
+  .form a:active {
+    text-decoration: underline;
+  }
+
+  .btn:active {
+    background: #fff;
+  }
+}
+
+.signup {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 15px;
+}
+
+.signup a {
+  font-weight: 600;
+  color: #00dbde;
+}
