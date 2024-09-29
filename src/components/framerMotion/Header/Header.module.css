@@ -14,6 +14,7 @@
 }
 .header .pizza_svg {
   width: 80px;
+  height: 80px;
   overflow: visible;
   stroke: #fff;
   stroke-width: 4;
