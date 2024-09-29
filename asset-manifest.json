@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/svg-animation-store/static/css/main.28d9ec3f.css",
-    "main.js": "/svg-animation-store/static/js/main.6fc10777.js",
+    "main.css": "/svg-animation-store/static/css/main.0db7c9ee.css",
+    "main.js": "/svg-animation-store/static/js/main.4f2c0dce.js",
     "static/js/453.e5402046.chunk.js": "/svg-animation-store/static/js/453.e5402046.chunk.js",
     "static/media/model.png": "/svg-animation-store/static/media/model.791a6874abe3402d23b0.png",
     "static/media/australia.jpg": "/svg-animation-store/static/media/australia.926712d149e3bbf43c0e.jpg",
@@ -23,6 +23,7 @@
     "static/media/dragon_1.jpg": "/svg-animation-store/static/media/dragon_1.db6d3315713ffdb3f1e7.jpg",
     "static/media/imageCSS_3.png": "/svg-animation-store/static/media/imageCSS_3.81b422c8ca59a999d38d.png",
     "static/media/imageHTML.png": "/svg-animation-store/static/media/imageHTML.00f418480ad76efae4ed.png",
+    "static/media/4.png": "/svg-animation-store/static/media/4.e05ede9ecbf6db4c9bef.png",
     "static/media/imageCSS_2.png": "/svg-animation-store/static/media/imageCSS_2.e971599f3ae19a212b55.png",
     "static/media/imageCSS_4.png": "/svg-animation-store/static/media/imageCSS_4.0d89a44129ef184ca608.png",
     "static/media/imageHTML_2.png": "/svg-animation-store/static/media/imageHTML_2.4f22ef36ab70e92c8c52.png",
@@ -35,16 +36,18 @@
     "static/media/iamgeCSS_4.png": "/svg-animation-store/static/media/iamgeCSS_4.159a54417f561149888f.png",
     "static/media/imageCSS_7.png": "/svg-animation-store/static/media/imageCSS_7.ac4835154cf8c20a660f.png",
     "static/media/imageHTML_3.png": "/svg-animation-store/static/media/imageHTML_3.4af3ffa187fbd603a9a1.png",
+    "static/media/6.png": "/svg-animation-store/static/media/6.7d997a0bd8c2a56efb1c.png",
+    "static/media/3.png": "/svg-animation-store/static/media/3.bc1b9f068f240416b84c.png",
     "static/media/rocket.svg": "/svg-animation-store/static/media/rocket.40d793e74fc81e4f8d92.svg",
     "static/media/plane.svg": "/svg-animation-store/static/media/plane.3b4ddfad98fc5a1e0e49.svg",
     "static/media/jet.svg": "/svg-animation-store/static/media/jet.2b933224b588f5781440.svg",
     "index.html": "/svg-animation-store/index.html",
-    "main.28d9ec3f.css.map": "/svg-animation-store/static/css/main.28d9ec3f.css.map",
-    "main.6fc10777.js.map": "/svg-animation-store/static/js/main.6fc10777.js.map",
+    "main.0db7c9ee.css.map": "/svg-animation-store/static/css/main.0db7c9ee.css.map",
+    "main.4f2c0dce.js.map": "/svg-animation-store/static/js/main.4f2c0dce.js.map",
     "453.e5402046.chunk.js.map": "/svg-animation-store/static/js/453.e5402046.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28d9ec3f.css",
-    "static/js/main.6fc10777.js"
+    "static/css/main.0db7c9ee.css",
+    "static/js/main.4f2c0dce.js"
   ]
 }
